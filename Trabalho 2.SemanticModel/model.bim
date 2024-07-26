@@ -2217,6 +2217,53 @@
                 "relationship": "9ff4a42f-20b0-4e54-9d24-2419994286a1"
               }
             ]
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "YEAR(Calendario[Date])",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "528f8c07-16df-4aaa-b6dc-dec50f9c4d20",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "(Calendario[Date].[Mês])",
+            "isDataTypeInferred": true,
+            "lineageTag": "9c254be2-69ed-4fb8-bc2c-b747ec01552d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "Calendario[Date].[Dia]",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "c2b3cf0b-a5b5-4956-8e97-2c4b9bfe29d0",
+            "summarizeBy": "sum",
+            "type": "calculated"
           }
         ],
         "lineageTag": "7f02a804-09fe-43e4-8c5b-6abdeffad1b1",
